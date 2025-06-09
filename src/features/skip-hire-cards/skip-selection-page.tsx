@@ -15,7 +15,7 @@ import HelpSection from "./components/help-section"
 export default function SkipSelectionPage() {
   const [selectedSkip, setSelectedSkip] = useState<number | null>(null)
   const [filter, setFilter] = useState<string>("all")
-  const [location, setLocation] = useState(DEFAULT_LOCATION)
+  const location = DEFAULT_LOCATION;
 
   const { skips, loading, error, refetch } = useSkipData(location)
 
