@@ -47,16 +47,16 @@ export default function ProgressIndicator({ currentStep }: ProgressIndicatorProp
             {steps.map((step, index) => (
               <div key={step.label} className="flex items-center space-x-3">
                 <div
-                  className={`w-10 h-10 rounded-full flex items-center justify-center shadow-lg ${
+                  className={`w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-200 ${
                     step.status === "completed"
                       ? "bg-emerald-500"
                       : step.status === "current"
                         ? "bg-blue-600 ring-4 ring-blue-100"
                         : "bg-slate-300"
-                  }`}
+                  } aspect-square`}
                 >
                   <step.icon
-                    className={`h-5 w-5 ${
+                    className={`h-6 w-6 ${
                       step.status === "completed" || step.status === "current" ? "text-white" : "text-slate-500"
                     }`}
                   />
