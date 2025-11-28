@@ -4,6 +4,10 @@ Here's your **updated README** with corrections for **React + TypeScript + Vite*
 
 # Skip Hire Selection Interface - Development Approach
 
+## 🔗 Live Demo
+
+**[View Live Demo](https://wewantwaste-pwwiob1ye-mohamedtahameaizi-gmailcoms-projects.vercel.app/)**
+
 ## 🎯 Project Overview
 
 This project is a modern, responsive React application for skip hire selection, built with **React**, **TypeScript**, **Vite**, and **Tailwind CSS**. The application provides an intuitive interface for customers to browse and select skip hire options with real-time API integration.
