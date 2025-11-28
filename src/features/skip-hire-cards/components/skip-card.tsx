@@ -4,6 +4,8 @@ import { Badge } from "@/components/ui/badge"
 import { ArrowRight, AlertTriangle, CheckCircle, Clock, Ruler, Package, Award } from "lucide-react"
 import type { SkipWithDetails } from "../types/skip"
 import { calculateTotalPrice } from "../utils/skip-helpers"
+import skipImg from "@/assets/skip.webp";
+
 
 interface SkipCardProps {
   skip: SkipWithDetails
@@ -32,11 +34,11 @@ export default function SkipCard({ skip, isSelected, onSelect }: SkipCardProps) 
 
       <div className="relative overflow-hidden">
         <img
-          src={skip.imageUrl || "/placeholder.svg?height=300&width=400"}
+          src={skip.imageUrl}
           alt={`${skip.size} Yard Skip`}
           className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110"
           onError={(e) => {
-            e.currentTarget.src = "/placeholder.svg?height=300&width=400"
+            e.currentTarget.src = skipImg
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
